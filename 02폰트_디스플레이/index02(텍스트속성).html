@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            border: 1px solid #777;
+            text-align: right;
+            letter-spacing: -1px;
+            /* 자간 */
+        }
+
+        div {
+            border: 1px solid #777;
+        }
+
+        div>img {
+            vertical-align: top;
+            /* 기준이 되는 태그에 지정함 */
+        }
+
+        /* 기준이 되는 태그가 없을 때, 글자를 수직정렬 보낼때는, line-height와 높이와 동일하게 맞춥니다. */
+        .box {
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body class="vsc-initialized">
+
+    <p>hello world</p>
+
+    <div>
+        hello world
+        <img src="img/css3.png" alt="제목">
+    </div>
+
+    <div class="box">
+        hello world
+    </div>
+
+    <a href="#">에이링크는 텍스트 데코레이션을 가지고 있음</a>
+
+
+</body>
+
+</html>
