@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            width: 800px;
+            border: 1px solid #777;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .box>.imgs,
+        .box>.content {
+            float: left;
+            width: 50%;
+        }
+
+        .price {
+            overflow: hidden;
+        }
+
+        .btn-area {
+            overflow: hidden;
+        }
+
+        .control {
+            margin-top: 50px;
+        }
+
+        .control .left {
+            float: left;
+        }
+
+        .control .right {
+            float: right;
+        }
+
+        .control .btn-area button {
+            width: 50%;
+        }
+    </style>
+
+</head>
+
+<body class="vsc-initialized">
+
+    <div class="box">
+        <div class="imgs">
+            사진...
+        </div>
+        <div class="content">
+            <p>제목: 플롯이란</p>
+            <p>내용: ~~~~</p>
+
+            <div class="control">
+                <div class="price">
+                    <div class="left">가격</div>
+                    <div class="right">10000원</div>
+                </div>
+                <div class="btn-area">
+                    <button type="button" class="left">장바구니</button>
+                    <button type="button" class="right">구매하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
