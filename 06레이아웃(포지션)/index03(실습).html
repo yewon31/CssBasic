@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding: 0; margin: 0;}
+        .reply-wrap {border: 1px solid #777; width: 500px; margin: 0 auto; position: relative; padding: 10px;}
+
+        .reply-wrap > .profile {position: absolute; left: 10px; top: 10px; width: 80px;}
+        .reply-content {padding-left: 90px; }
+        .reply-content .box textarea {box-sizing: border-box; width: 100%; min-height: 100px; resize: vertical; padding: 10px;}
+
+        .control {overflow: hidden;}
+        .control .left {float: left;}
+        .control .right {float: right;}
+        .control .left input {display: block;}
+        .control .left input:nth-child(2) {margin-top: 4px;}
+    </style>
+
+</head>
+<body>
+    
+    <div class="reply-wrap">
+        <img src="img/bgimg.png" alt="profile" class="profile">
+
+        <div class="reply-content">
+            <div class="box">
+                <textarea name="" id=""></textarea>
+            </div>
+            <div class="control">
+                <div class="left">
+                    <input type="text">
+                    <input type="text">
+                </div>
+                <button type="button" class="right">등록하기</button>
+            </div>
+        </div>       
+    </div>
+
+    <div class="reply-wrap">
+        <img src="img/bgimg.png" alt="profile" class="profile">
+        <div class="reply-content" style="min-height: 70px;">
+            <div class="control">
+                <div class="left">
+                    <p><strong>제목</strong></p>
+                    <p>내용</p>
+                </div>
+                <button type="button" >수정</button>
+                <button type="button">삭제</button>
+            </div>
+        </div>
+    </div>
+
+</body></html>

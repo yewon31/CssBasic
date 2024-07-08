@@ -1,0 +1,78 @@
+@import url(default.css);
+
+.header {border-top: 3px solid #00d344;}
+.header .wrap {border-bottom: 1px solid #e3e3e3;}
+.header .wrap .top {width: 1008px; margin: 0 auto;}
+
+.header .top {overflow: hidden;}
+.header .top .top-left {float: left; color: #999; font-size: 15px; font-weight: bold; padding: 9px 7px;}
+.header .top .top-right {float: right;}
+
+.top-right > ul > li {display: inline; border-left: 1px solid #999;}
+.top-right > ul > li:nth-child(1) {border: none;}
+.top-right > ul > li > a {
+    display: inline-block; 
+    font-size: 12px; 
+    padding: 9px 7px;
+    color:#999;
+    text-decoration: none;
+}
+.top-right > ul > li > a > span.m1 {
+    /* 붙여쓰기도 선택자 - span태그인데 클래스명 m1  */
+    background-image: url(img/head_menu_201014.png);
+    background-repeat: no-repeat;
+    background-position: 0 -60px;
+    width: 75px;
+    height: 20px;
+    display: block;
+    text-indent: -9999px;
+}
+
+.header .mid {overflow: hidden; width: 1008px; margin: 0 auto;}
+.header .mid .mid-left {float: left; overflow: hidden;}
+.header .mid .mid-right {float: right;}
+
+.header .mid fieldset {
+    width: 330px;
+    height: 40px;
+    margin: 36px 0 0 11px;
+    background-image: url(img/melon_search.png);
+    background-repeat: no-repeat;
+    border: none;
+}
+.mid-left > input {
+    float: left; 
+    margin: 7px 0 0 18px; 
+    width: 249px; 
+    height: 25px; 
+    display: block;
+    border: none;
+}
+.mid-left > button {
+    float: right; 
+    background-image: url(img/melon_btn.png);
+    width: 45px;
+    height: 40px;
+    background-repeat: no-repeat;
+    border: none;
+    text-indent: -9999px;
+    background-color: #fff;
+}
+
+.header .bottom {overflow: hidden; width: 1008px; margin: 0 auto;}
+.header .bottom .left {float: left;}
+.header .bottom .right {float: right;}
+
+.bottom ul li {display: inline;}
+.bottom ul li a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    width: 80px;
+    height: 35px;
+    text-align: center;
+}
+.bottom ul li a:hover {
+    color: #00d344;
+}

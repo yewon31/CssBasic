@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0;  }
+        ul, li {list-style: none;}
+        .header {text-align: center; position: fixed; left: 0; top: 0; width: 100%; background-color: #fff;}
+        .nav ul {background-color: #000; height: 42px; }
+        .nav ul li {display: inline;}
+        .nav ul li a {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px 20px; /* 위아래, 좌우 */
+        }
+        .nav ul li a:hover {border-bottom: 3px solid yellow;}
+        .top-btn {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            width: 50px;
+            height: 50px;
+            text-align: center;           
+            background-color: aqua;
+            line-height: 50px;    
+            text-decoration: none;
+        }
+        .menus {
+            background-color: green;
+            position: sticky;
+            /* 
+            1. 필수 적으로 top, bottom, left, right중에 1개 반드시 있어야함(브라우저가 해당 높이가 될때 fixed속성으로 바뀜)
+            2. fixed가 적용된 부모속성에 overflow: hidden이 있으면 적용되지 않음.
+            */
+            top:142px; /* 헤더의 높이만큼 - 브라우저 142 높이에서 fixed속성으로 변함 */
+        }
+    </style>
+</head>
+<body>
+    <!--포지션 fixed-->
+    <!--포지션 sticky - 특정높이에서는 static속성처럼 행동하다가, 특정 높이가되면 fixed가 되는 속성  -->
+    <header class="header">
+        <div class="logo">
+            <img src="img/bgimg.png" alt="로고">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </div>
+    </header>
+    <section style="margin-top: 142px;">
+        
+        <div style="height: 1000px;">
+        </div>
+        <div class="menus">
+            스티키 메뉴 영역
+        </div>
+        <div style="height: 1000px;">
+        </div>
+    </section>
+    <div class="top-btn">
+        <a href="#">TOP</a>
+    </div>
+</body></html>
