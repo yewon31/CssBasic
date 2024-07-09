@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        /* 공통부분은 기본 디자인으로 사용 */
+        .box {width: 80%; margin: 0 auto;}
+
+        /* 1240px이상에서 동작 (웹) */
+        @media(min-width: 1240px) {
+            .box > div {float: left; width: 16.6666%;}
+        }
+
+        /* 767px이상~1239px이하에 동작 (테블릿) */
+        @media(max-width: 1239px ) and (min-width: 767px) {
+            .box > div {float: left; width: 25%;}
+        }
+
+
+        /* 766px이하에서 동작 (모바일) */
+        @media(max-width: 766px) { 
+            .box > div {float: left; width: 50%;}
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+
+    <!--
+        웹환경에서는 6개씩
+        테블릿환경에서는 4개씩
+        모바일환경에서는 2개씩
+    -->
+
+    <div class="box">
+        <div>박스</div>
+        <div>박스</div>
+        <div>박스</div>
+        <div>박스</div>
+        <div>박스</div>
+        <div>박스</div>
+        <div>박스</div>
+        <div>박스</div>
+    </div>
+
+
+</body>
+</html>

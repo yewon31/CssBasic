@@ -1,5 +1,18 @@
-* { margin : 0; padding : 0; box-sizing: border-box; font-family: Arial, sans-serif; } 
-a { text-decoration : none; color : black; } 
-ul, li, ol, dl, dd { list-style: none; } 
-img { max-width: 100%; height: auto; } 
-table {border-collapse: collapse;border-spacing: 0; } 
+
+body { margin: 0; } 
+a { background-color: transparent; } 
+a:active,
+a:hover { outline: 0; } 
+img { border: 0; } 
+button { overflow: visible; } 
+button,
+select { text-transform: none; } 
+button,
+html input[type="button"], 
+input[type="reset"],
+input[type="submit"] { -webkit-appearance: button; cursor: pointer; } 
+button[disabled],
+html input[disabled] { cursor: default; } 
+
+optgroup { font-weight: bold; } 
+
