@@ -59,6 +59,7 @@
     background-color: #fff;
 }
 
+
 .header .bottom {overflow: hidden; width: 1008px; margin: 0 auto;}
 .header .bottom .left {float: left;}
 .header .bottom .right {float: right;}
@@ -75,4 +76,81 @@
 }
 .bottom ul li a:hover {
     color: #00d344;
+}
+
+/* ==========본문============= */
+
+.section .wrap {width: 1008px; margin: 0 auto;}
+
+.wrap .content {overflow: hidden;}
+.wrap .content .list-wrap {float: left; width: 480px;}
+.wrap .content .slide-wrap {float: left; width: 236px; margin-left: 4px;}
+.wrap .content .user-wrap {float: left; width: 280px; margin-left: 8px;}
+
+
+.list-wrap ul {overflow: hidden;}
+.list-wrap ul li {float: left; width: 33.3333%;}
+
+
+.list-wrap ul li > a {display: inline-block; position: relative;}
+.list-wrap ul li > a > .singer {
+    position: absolute; 
+    left: 0; 
+    bottom: 4px; 
+    width: 100%; 
+    background-color: rgb(0, 0, 0, 0.7);
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.list-wrap ul li {position: relative;}
+.list-wrap ul li .hover-content {
+    position: absolute; 
+    left: 0;
+    top: 0;
+    width: 156px;
+    height: 156px;
+    background-color: rgb(0, 0, 0, 0.7);
+    opacity: 0; /* 투명도 0 */
+    transition: opacity 0.5s ease-in-out; /* 속성 주기 타이밍펑션 딜레이; */
+}
+.list-wrap ul li .hover-content > a {
+    color: #fff;
+    text-decoration: none;
+    width: 156px;
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.list-wrap ul li:hover > .hover-content {
+    opacity: 1; /* li에 마우스 닿으면 .hover-content 투명도 1 */
+}
+
+.login-wrap {
+    border: 1px solid #e0e0e0;
+    background-color: #fbfbfb;
+    height: 115px;
+    padding: 0 20px;
+}
+.login-wrap .top {overflow: hidden; margin-top: 30px;}
+.login-wrap .top > .left {float: left; font-size: 12px; color: #939393;}
+.login-wrap .top > .right {float: right; font-size: 12px; color: #939393;}
+.login-wrap > button {
+    /* 버튼디자인 */
+    width: 100%;
+    background-color: #00d344;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.user-wrap > .promotion-wrap {
+    margin-top: 10px;
 }
