@@ -1,18 +1,45 @@
-
-body { margin: 0; } 
-a { background-color: transparent; } 
-a:active,
-a:hover { outline: 0; } 
-img { border: 0; } 
-button { overflow: visible; } 
-button,
-select { text-transform: none; } 
-button,
-html input[type="button"], 
-input[type="reset"],
-input[type="submit"] { -webkit-appearance: button; cursor: pointer; } 
-button[disabled],
-html input[disabled] { cursor: default; } 
-
-optgroup { font-weight: bold; } 
-
+@import url(default.css); .header { border-top: 3px solid #00d344; } 
+.header .wrap { border-bottom: 1px solid #e3e3e3; } 
+.header .wrap .top { width: 1008px; margin: 0 auto; } 
+.header .top { overflow: hidden; } 
+.header .top .top-left { float: left; color: #999; font-size: 15px; font-weight: bold; padding: 9px 7px; } 
+.header .top .top-right { float: right; } 
+.top-right > ul > li { display: inline; border-left: 1px solid #999; } 
+.top-right > ul > li:nth-child(1) { border: none; } 
+.top-right > ul > li > a { display: inline-block; font-size: 12px; padding: 9px 7px; color:#999; text-decoration: none; } 
+.top-right > ul > li > a > span.m1 { /* 붙여쓰기도 선택자 - span태그인데 클래스명 m1 */
+ background-image: url(img/head_menu_201014.png); background-repeat: no-repeat; background-position: 0 -60px; width: 75px; height: 20px; display: block; text-indent: -9999px; } 
+.header .mid { overflow: hidden; width: 1008px; margin: 0 auto; } 
+.header .mid .mid-left { float: left; overflow: hidden; } 
+.header .mid .mid-right { float: right; } 
+.header .mid fieldset { width: 330px; height: 40px; margin: 36px 0 0 11px; background-image: url(img/melon_search.png); background-repeat: no-repeat; border: none; } 
+.mid-left > input { float: left; margin: 7px 0 0 18px; width: 249px; height: 25px; display: block; border: none; } 
+.mid-left > button { float: right; background-image: url(img/melon_btn.png); width: 45px; height: 40px; background-repeat: no-repeat; border: none; text-indent: -9999px; background-color: #fff; } 
+.header .bottom { overflow: hidden; width: 1008px; margin: 0 auto; } 
+.header .bottom .left { float: left; } 
+.header .bottom .right { float: right; } 
+.bottom ul li { display: inline; } 
+.bottom ul li a { display: inline-block; color: #000; text-decoration: none; font-weight: 600; width: 80px; height: 35px; text-align: center; } 
+.bottom ul li a:hover { color: #00d344; } 
+/* ==========본문============= */
+.section .wrap { width: 1008px; margin: 0 auto; } 
+.wrap .content { overflow: hidden; } 
+.wrap .content .list-wrap { float: left; width: 480px; } 
+.wrap .content .slide-wrap { float: left; width: 236px; margin-left: 4px; } 
+.wrap .content .user-wrap { float: left; width: 280px; margin-left: 8px; } 
+.list-wrap ul { overflow: hidden; } 
+.list-wrap ul li { float: left; width: 33.3333%; } 
+.list-wrap ul li > a { display: inline-block; position: relative; } 
+.list-wrap ul li > a > .singer { position: absolute; left: 0; bottom: 4px; width: 100%; background-color: rgb(0, 0, 0, 0.7); height: 25px; line-height: 25px; color: #fff; font-size: 15px; font-weight: 600; text-align: center; } 
+.list-wrap ul li { position: relative; } 
+.list-wrap ul li .hover-content { position: absolute; left: 0; top: 0; width: 156px; height: 156px; background-color: rgb(0, 0, 0, 0.7); opacity: 0; /* 투명도 0 */
+ transition: opacity 0.5s ease-in-out; /* 속성 주기 타이밍펑션 딜레이; */ } 
+.list-wrap ul li .hover-content > a { color: #fff; text-decoration: none; width: 156px; display: block; text-align: center; margin-top: 50px; } 
+.list-wrap ul li:hover > .hover-content { opacity: 1; /* li에 마우스 닿으면 .hover-content 투명도 1 */ } 
+.login-wrap { border: 1px solid #e0e0e0; background-color: #fbfbfb; height: 115px; padding: 0 20px; } 
+.login-wrap .top { overflow: hidden; margin-top: 30px; } 
+.login-wrap .top > .left { float: left; font-size: 12px; color: #939393; } 
+.login-wrap .top > .right { float: right; font-size: 12px; color: #939393; } 
+.login-wrap > button { /* 버튼디자인 */
+ width: 100%; background-color: #00d344; border: none; color: #fff; font-weight: 700; height: 35px; cursor: pointer; margin-top: 5px; } 
+.user-wrap > .promotion-wrap { margin-top: 10px; } 
