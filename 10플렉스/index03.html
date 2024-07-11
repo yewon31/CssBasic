@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {background-color: yellow; padding: 10px;}
+        .box .item {background-color: green; /* width: 50px; */ height: 50px;  margin: 5px; }
+
+    </style>
+
+</head>
+<body>
+
+    <h3>item에 적용하는 속성들</h3>
+    <style>
+        .container {
+            display: flex;
+            
+            /* 
+            grow - 증가되는비율, 기본값 0
+            너비가 없는 상태에서 아이템의 비율(증가비율) 이 적용가능함
+
+            shrink - 감소되는 비율, 기본값 1
+
+            basis - 박스의 기본 너비, 기본값 auto
+
+            만약에 박스를 고정시킬거면 
+            basis, shirink 0으로 하고, basis만 지정하면 박스가 고정됨
+            */
+            height: 300px;            
+        }
+        .item1 {
+           /*  flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 20%; */
+            flex: 0 0 20%;
+            order: 3;   
+            align-self: center;
+            /* width와 거의 비슷한 속성임 */
+        }
+        .item2 {
+            /* flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 30%; */
+            flex: 0 0 30%;
+            order: 1;
+            align-self: flex-end;
+        }
+        .item3 {
+            /* flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 50%; */
+            flex: 0 0 50%;
+            order: -1;
+        }
+
+
+    </style>
+
+
+    <div class="container box">
+        <div class="item item1">hello</div>
+        <div class="item item2">world</div>
+        <div class="item item3">flex</div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+
+/* ======로그인창===== */
+.join-style {
+    
+    margin: 0 auto; /* 박스를 가운데 */
+    float: none; /* 부트스트랩은 col클래스가 float영향을 받는데, 하나 박스를 가운대로 배치하려면 float을 해제함 */
+
+    padding: 30px;
+    box-shadow: 0 8px 16px rgb(0,0,0,0.3);
+}
+
+/* =====상품 디테일===== */
+.detail-content {
+    min-height: 300px; /* 컨텐츠 높이 보정 */
+}
+.detail-content > .title {
+    font-size: 20px;
+    font-weight: 900;
+}
+.detail-content > .price {
+    font-size: 23px;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px dotted #e3e3e3e3;
+    padding: 10px 0; /* 위아래, 좌우 */
+}
+.detail-content > .deliver {
+    font-size: 15px;
+    color : #999;
+}
+
+.detail-control {margin-top: 83px;}
+.detail-control > .price {overflow: hidden;}
+.detail-control > .price > .left {float: left; font-size: 15px; margin-top: 5px;}
+.detail-control > .price > .right {float: right; font-size: 20px;}
+
+.detail-control > .order {overflow: hidden;}
+.detail-control > .order > button {float: left; width: 50%;}
+
+/*======= 탭스타일 ===== */
+.my-tab > li {
+    width: 25%;
+    text-align: center;
+    
+}
+.my-tab > li > a {
+    border: 1px solid #e3e3e3;
+    border-radius: 0;
+    margin: 0;
+    color: #000;
+}
+.my-tab>li.active>a, 
+.my-tab>li.active>a:focus, 
+.my-tab>li.active>a:hover {
+    color: red;
+ 
+}
+.my-tab>li>a:hover {
+    border-color: #e3e3e3;
+}
